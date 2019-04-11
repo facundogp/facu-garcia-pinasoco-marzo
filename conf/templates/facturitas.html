@@ -1,0 +1,19 @@
+<html>
+
+  <body>
+
+        <h2>FACTURAS</h2>
+
+        <ul>
+          {% for a in facturakey %}
+            <li><h5>facturar:<h5/><p>{{a.factura}}</p> <a href="{% url 'productito' a.id %}">Ver Mas</a></li>
+          {% endfor %}
+        </ul>
+        <ul>
+          {% for a in factutotal %}
+            <li><h5>factura total:<h5/><p>{{a.factura}}</p></li>
+          {% endfor %}
+        </ul>
+  </body>
+
+</html>

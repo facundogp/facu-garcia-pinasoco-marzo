@@ -1,0 +1,15 @@
+<html>
+
+  <body>
+
+        <h2>CLIENTES</h2>
+
+        <ul>
+          {% for a in clientes_nombres %}
+            <li><h5>Cliente:<h5/>{{a.nombre}} {{a.apellido}} <a href="{% url 'facturitas' a.id %}">Ver Mas</a> </li>
+          {% endfor %}
+        </ul>
+
+  </body>
+
+</html>
